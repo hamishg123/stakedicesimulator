@@ -1,4 +1,4 @@
 alert("test");
-const toptext = document.getElementsByClassName("header");
+const toptext = document.getElementsByClassName("headtext");
 
 toptext.innerHTML = "testing"
