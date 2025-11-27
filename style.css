@@ -39,9 +39,11 @@ input{
 #controlls{
     margin-left: 0;
     margin-top: 0;
+    left: opx;
 }
 
 #messages{
+    right: 0px;
     margin-right: 0;
     margin-top: 0;
     border: 5px black solid;
