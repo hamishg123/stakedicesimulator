@@ -7,8 +7,8 @@ html{
 }
 
 .header {
-    
-    width: 100%;
+    float: left;
+    width: 60%;
     height: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -46,8 +46,7 @@ input{
 }
 
 #messages{
-    display: inline;
-    float: right;
+    float: left;
     height: 100%;
     width: 20%;
     overflow-y: scroll;
