@@ -1,4 +1,4 @@
 alert("test");
-const toptext = document.getElementsByClassName("headtext");
+const toptext = document.getElementById("headtext");
 
 toptext.textContent = "test";

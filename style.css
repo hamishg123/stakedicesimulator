@@ -17,7 +17,7 @@ html{
     padding-bottom: 1rem;
     background-color: rgb(70, 68, 68);
 }
-.headtext {
+#headtext {
     justify-content: center;
     align-content: center;
     margin: auto;
