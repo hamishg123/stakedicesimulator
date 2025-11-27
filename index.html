@@ -12,8 +12,10 @@
     <meter id="slider" min="0" max="100" low="50" high="51" optimum="100"></meter>
     </div>
     <div id="controlls">
-        <h3>bet amount <input type="number"  value="1" placeholder="0.01"> £</h3>
-        <h3>Land over <input type="number" value="50" placeholder="50"> %</h3>
+        <h3>Start Balence <input id="balence" type="number"  value="100" placeholder="100"> £</h3>
+        <h3>bet amount <input id="stake" type="number"  value="1" placeholder="1"> £</h3>
+        <h3>Land over <input id="over" type="number" value="50" placeholder="50"> %</h3>
+        <button onclick="bet()">Bet!</button>
     </div>
     <script src="script.js">
 
