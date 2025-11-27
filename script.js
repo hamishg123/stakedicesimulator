@@ -38,7 +38,7 @@ function bet() {
 
             message.textContent = "-" + stakeValue;
             message.style.color = "tomato";
-            document.getElementById("messages").prepend(message);
+            document.getElementById("messages").getElementById("h2").append(message);
         } 
         
     }
