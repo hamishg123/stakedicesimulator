@@ -48,6 +48,7 @@ input{
     float: left;
     height: 90%;
     width: 20%;
+    background-color: darkgrey;
 }
 
 #messages{
