@@ -29,12 +29,14 @@ function bet() {
             let winnings = stakeValue * payoutMultiplier;
             balence.value = Number(balence.value) + winnings;
             message.textContent = "+" + winnings;
-            message.style.color = "green";
-            document.getElementById("messages").appendChild(message);
+            message.style.color = "lightgreen";
+            document.getElementById("messages").prepend(message);
             
         } else {
 
-            
+            message.textContent = "-" + stakeValue;
+            message.style.color = "lightred";
+            document.getElementById("messages").prepend(message);
         } 
         
     }
