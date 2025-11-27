@@ -12,6 +12,8 @@ function bet() {
     const balanceValue = Number(balence.value);
     const stakeValue = Number(stake.value);
     const overValue   = Number(over.value);
+    slider.low = overValue;
+    slider.high = overValue + 1;
     if (balanceValue < stakeValue) {
         toptext.textContent = "You Dont have Enough balence!";
         toptext.style.color = "red"
