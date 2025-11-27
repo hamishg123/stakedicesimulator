@@ -29,10 +29,12 @@ html{
 #gamebox{
    justify-content: center;
     align-content: center;
+    align-self: center;
     margin: auto;
     text-align: center; 
     background-color: rgb(70, 68, 68);
     height: 90%;
+    width: 60%;
     
 }
 
