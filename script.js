@@ -32,13 +32,13 @@ function bet() {
             balence.value = Number(balence.value) + winnings;
             message.textContent = "+" + winnings;
             message.style.color = "lightgreen";
-            document.getElementById("messages").getElementById("h2").prepend(message)
+            document.getElementById("messages").prepend(message);
             
         } else {
 
             message.textContent = "-" + stakeValue;
             message.style.color = "tomato";
-            document.getElementById("messages").getElementById("h2").prepend(message);
+            document.getElementById("messages").prepend(message);
         } 
         
     }
