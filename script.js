@@ -16,6 +16,7 @@ function bet() {
         toptext.style.color = "red"
     }
     else {
+        balence.value = balanceValue - stakeValue
         let rv = Math.floor(Math.random() * 101);
         slider.value = rv;
         toptext.textContent = rv;
@@ -27,7 +28,7 @@ function bet() {
 
              balence.value = balanceValue + winnings;
         } else {
-            balence.value = balanceValue - stakeValue;
+            
         } 
         
     }
