@@ -22,7 +22,8 @@ html{
 }
 
 #slider {
-    size: 5em;
+    width: 80%;
+    height: 40px;
 }
 #gamebox{
    justify-content: center;
