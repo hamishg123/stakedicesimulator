@@ -43,6 +43,8 @@ input{
 }
 
 #messages{
+    display: inline;
+    float: right;
     right: 0px;
     top: 0px;
     border: 5px black solid;
