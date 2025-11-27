@@ -25,9 +25,9 @@ function bet() {
             let payoutMultiplier = (100 / winChance) * 0.99;  
             let winnings = stakeValue * payoutMultiplier;
 
-             balanceValue += winnings;
+             balence.value = balanceValue + winnings;
         } else {
-            balanceValue -= stakeValue;
+            balence.value = balanceValue - stakeValue;
         } 
         
     }
