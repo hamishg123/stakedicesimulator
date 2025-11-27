@@ -30,8 +30,10 @@ function bet() {
             balence.value = Number(balence.value) + winnings;
             message.textContent = "+" + winnings;
             message.style.color = "green";
+            document.getElementById("messages").appendChild(message);
             
         } else {
+
             
         } 
         

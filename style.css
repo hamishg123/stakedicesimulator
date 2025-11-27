@@ -41,3 +41,9 @@ input{
     margin-top: 0;
 }
 
+#messages{
+    margin-right: 0;
+    margin-top: 0;
+    border: 5px black solid;
+}
+
