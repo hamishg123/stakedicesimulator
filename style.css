@@ -22,7 +22,7 @@ html{
 }
 
 #slider {
-    width: 80%;
+    width: 55%;
     height: 40px;
 }
 #gamebox{
@@ -40,12 +40,16 @@ input{
     margin-left: 0;
     margin-top: 0;
     left: 0px;
+    float: left;
+    height: 100%;
+    width: 20%;
 }
 
 #messages{
     display: inline;
     float: right;
-    height: 25%;
+    height: 100%;
+    width: 20%;
     overflow-y: scroll;
     background-color: darkgrey;
     
