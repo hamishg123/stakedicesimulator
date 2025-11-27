@@ -45,6 +45,9 @@ input{
 #messages{
     display: inline;
     float: right;
+    height: 25%;
+    overflow-y: scroll;
+
     
 }
 
