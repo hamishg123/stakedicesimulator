@@ -23,3 +23,9 @@ html{
     margin: auto;
 }
 
+#slider{
+    width: 80%;
+    height: 0.1rem;
+    background-color: black;
+}
+
