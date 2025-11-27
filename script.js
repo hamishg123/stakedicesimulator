@@ -5,13 +5,30 @@ const balence = document.getElementById("balence");
 const stake = document.getElementById("stake");
 const over = document.getElementById("over");
 
-let rv = Math.floor(Math.random() * 101);
-slider.value = rv;
-toptext.textContent = rv;
+
 
 function bet() {
+    const balanceValue = Number(balence.value);
+    const stakeValue = Number(stake.value);
+    const overValue   = Number(over.value);
     if (balence.value < stake.value) {
         toptext.textContent = "You Dont have Enough balence!";
         toptext.style.color = "red"
+    }
+    else {
+        let rv = Math.floor(Math.random() * 101);
+        slider.value = rv;
+        toptext.textContent = rv;
+        toptext.style.color = "white"
+        if (rv > over.value) {
+            let winChance = 100 - overValue;
+            let payoutMultiplier = (100 / winChance) * 0.99;  
+            let winnings = stakeValue * payoutMultiplier;
+
+            balence.value = balanceValue + winnings;
+        } else {
+            balence.value = balanceValue - stakeValue;
+        } 
+        
     }
 }
