@@ -10,7 +10,7 @@ slider.value = rv;
 toptext.textContent = rv;
 
 function bet() {
-    if (balence <= stake) {
+    if (balence.value < stake.value) {
         toptext.textContent = "You Dont have Enough balence!";
         toptext.style.color = "red"
     }
