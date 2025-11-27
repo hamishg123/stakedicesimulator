@@ -1,7 +1,7 @@
 
 const toptext = document.getElementById("headtext");
 const slider = document.getElementById("slider");
-const balence = document.getElementById("balence");
+const balence = document.getElementById("balance");
 const stake = document.getElementById("stake");
 const over = document.getElementById("over");
 
@@ -11,7 +11,7 @@ function bet() {
     const balanceValue = Number(balence.value);
     const stakeValue = Number(stake.value);
     const overValue   = Number(over.value);
-    if (balence.value < stake.value) {
+    if (balanceValue < stakeValue) {
         toptext.textContent = "You Dont have Enough balence!";
         toptext.style.color = "red"
     }
@@ -25,9 +25,9 @@ function bet() {
             let payoutMultiplier = (100 / winChance) * 0.99;  
             let winnings = stakeValue * payoutMultiplier;
 
-            balence.value = balanceValue + winnings;
+             balanceValue += winnings;
         } else {
-            balence.value = balanceValue - stakeValue;
+            balanceValue -= stakeValue;
         } 
         
     }
