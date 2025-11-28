@@ -60,4 +60,12 @@ input{
     background-color: darkgrey;
     
 }
+#marker{
+    position: relative;
+    width: 5%;
+    height: 10%;
+    background-color: aqua;
+    top: 0px;
+    margin-left: 50%;
+}
 
