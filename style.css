@@ -4,6 +4,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     width: 100%;
+    margin: 5px;
     
     
 }
@@ -43,9 +44,9 @@ input{
     width: 5rem;
 }
 #controlls{
-    margin-left: 0;
-    margin-top: 0;
-    left: 0px;
+    
+    
+    
     float: left;
     height: 90%;
     width: 20%;
@@ -58,6 +59,7 @@ input{
     width: 20%;
     overflow-y: scroll;
     background-color: darkgrey;
+    text-align: center;
     
 }
 #marker{
