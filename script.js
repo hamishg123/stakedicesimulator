@@ -44,11 +44,11 @@ function bet() {
     }
 }
 function half() {
-    const stakeValue = Number(stake.value);
-    stakeValue /= 2
+    
+    stake.value /= 2
 }
 
 function double() {
-    const stakeValue = Number(stake.value);
-    stakeValue *= 2
+    
+    stake.value *= 2
 }
