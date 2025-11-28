@@ -60,6 +60,7 @@ input{
     overflow-y: scroll;
     background-color: darkgrey;
     text-align: center;
+    outline: 1px black solid;
     
 }
 #marker{
