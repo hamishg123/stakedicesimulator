@@ -62,8 +62,8 @@ input{
 }
 #marker{
     
-    width: 5%;
-    height: 10%;
+    width: 100px;
+    height: 100px;
     background-color: aqua;
     
     
