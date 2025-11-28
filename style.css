@@ -60,6 +60,7 @@ input{
     overflow-y: scroll;
     background-color: darkgrey;
     text-align: center;
+    -webkit-text-stroke: 1px black;
     outline: 1px black solid;
     
 }
