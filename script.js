@@ -43,3 +43,10 @@ function bet() {
         
     }
 }
+function half() {
+    stake.value /= 2
+}
+
+function double() {
+    stake.value *= 2
+}
