@@ -62,15 +62,16 @@ input{
     text-align: center;
     -webkit-text-stroke: 1px black;
     
-    font-size: larger;
+    font-size: 1.5rem;
     
 }
 #marker{
+    position: relative;
+    width: 3%;
+    height: 5%;
+    background-color: rgb(0, 0, 0);
     
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    
+    top: -40px;
+    left: 47%;
     
 }
-

@@ -1,4 +1,5 @@
 
+
 const toptext = document.getElementById("headtext");
 const slider = document.getElementById("slider");
 const balence = document.getElementById("balance");
@@ -19,6 +20,12 @@ function bet() {
         toptext.style.color = "red"
 
     }
+    if (over.value <= 1 || over.value >= 100) {
+         toptext.textContent = "Land Over Must Be Bigger Then 1 and Smaller then 100!";
+        toptext.style.color = "red"
+    }
+        
+    
     else {
         balence.value = balanceValue - stakeValue
         let rv = Math.floor(Math.random() * 101);
@@ -51,4 +58,10 @@ function half() {
 function double() {
     
     stake.value *= 2
+}
+function updateover() {
+    let marker = document.getElementById("marker");
+    let changeby =  55/100 * (over.value - 50);
+    console.log(changeby);
+    marker.style.marginLeft =  changeby  + "%";
 }
