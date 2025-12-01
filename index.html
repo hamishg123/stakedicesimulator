@@ -3,19 +3,55 @@
         <head>
         <title>dice simulator</title>
 
-        <!-- ✅ SEO ADDED (nothing else touched) -->
+        <!-- 🚀 CORE WEB VITALS OPTIMIZATIONS -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Free dice strategy simulator. Test stake-style betting strategies, calculate payouts, and experiment with win chances without risking real money.">
-        <meta name="keywords" content="dice simulator, stake dice, dice strategy, betting simulator, win chance calculator, payout calculator">
-        <meta name="author" content="Dice Simulator">
-        <meta property="og:title" content="Dice Strategy Simulator">
-        <meta property="og:description" content="Simulate Stake-style dice betting, test strategies, and adjust win chances.">
-        <meta property="og:type" content="website">
-        <!-- END SEO -->
 
-        <link rel="stylesheet" href="style.css">
-        
+        <!-- Preload CSS for faster rendering -->
+        <link rel="preload" href="style.css" as="style">
+
+        <!-- Load CSS async-safe -->
+        <link rel="stylesheet" href="style.css" media="all">
+
+        <!-- Preconnect to speed up future requests -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Better title for SEO -->
+        <meta name="description" content="Free Stake-style dice strategy simulator. Test gambling strategies, win chances, payouts, and probabilities without risking money.">
+        <meta name="keywords" content="dice simulator, stake dice, dice strategy, betting calculator, win chance calculator, gambling simulator, house edge calculator">
+        <meta name="author" content="Dice Simulator Engine">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Dice Strategy Simulator">
+        <meta property="og:description" content="Simulate Stake-style dice betting. Calculate win percentages, payouts, and test strategies instantly.">
+        <meta property="og:type" content="website">
+
+        <!-- 🚀 SCHEMA MARKUP (JSON-LD) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Dice Strategy Simulator",
+          "url": "https://your-website-url-here.com",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "All",
+          "description": "Stake-style dice simulator. Test betting strategies, calculate win chances, and simulate gambling outcomes without risking real money.",
+          "image": "https://your-website-url-here.com/preview.png",
+          "author": {
+            "@type": "Person",
+            "name": "Dice Simulator Developer"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP"
+          }
+        }
+        </script>
+
+        <!-- END SEO + WEB VITALS -->
+
         <div class="header">
             <h2 id="headtext">
                 dice stratigy simulator
@@ -38,6 +74,7 @@
     
     <div id="messages"><h2 id="h2">History:</h2><div id="msgbox"></div></div>
 
-    <script src="script.js"></script>
+    <!-- 🚀 Load JS without blocking rendering -->
+    <script src="script.js" defer></script>
     </body>
 </html>
