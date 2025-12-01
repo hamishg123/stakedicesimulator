@@ -19,7 +19,7 @@ function bet() {
         toptext.textContent = "You Dont have Enough balence!";
         toptext.style.color = "red"
 
-    }
+    } 
     if (over.value <= 1 || over.value >= 100) {
          toptext.textContent = "Land Over Must Be Bigger Then 1 and Smaller then 100!";
         toptext.style.color = "red"
@@ -63,5 +63,5 @@ function updateover() {
     let marker = document.getElementById("marker");
     let changeby =  55/100 * (over.value - 47);
     console.log(changeby);
-    marker.style.marginLeft =  changeby + 3  + "%";
+    marker.style.marginLeft =  changeby + 1.5  + "%";
 }
