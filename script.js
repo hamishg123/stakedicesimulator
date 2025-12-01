@@ -66,5 +66,5 @@ function updateover() {
     let marker = document.getElementById("marker");
     let changeby =  55/100 * (over.value - 47);
     console.log(changeby);
-    marker.style.marginLeft =  changeby - 7  + "%";
+    marker.style.marginLeft =  changeby - 4.5  + "%";
 }
