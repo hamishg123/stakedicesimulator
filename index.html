@@ -1,63 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <header>
+        <head>
+        <title>dice simulator</title>
 
-    <title>Dice Strategy Simulator | Win Chance Calculator (Stake-Style)</title>
+        <!-- ✅ SEO ADDED (nothing else touched) -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Free dice strategy simulator. Test stake-style betting strategies, calculate payouts, and experiment with win chances without risking real money.">
+        <meta name="keywords" content="dice simulator, stake dice, dice strategy, betting simulator, win chance calculator, payout calculator">
+        <meta name="author" content="Dice Simulator">
+        <meta property="og:title" content="Dice Strategy Simulator">
+        <meta property="og:description" content="Simulate Stake-style dice betting, test strategies, and adjust win chances.">
+        <meta property="og:type" content="website">
+        <!-- END SEO -->
 
-    <meta name="description" content="A free dice strategy simulator inspired by Stake.com. Test betting strategies, calculate win chances, and experiment with payout multipliers without risking real money.">
-    <meta name="keywords" content="dice simulator, stake dice, betting simulator, dice strategy, gambling simulator, win chance calculator, payout calculator">
-    <meta name="author" content="Dice Simulator">
-
-    <!-- Open Graph (for social sharing) -->
-    <meta property="og:title" content="Dice Strategy Simulator">
-    <meta property="og:description" content="Try strategies, test odds, and simulate Stake-style dice betting with real-time payout calculations.">
-    <meta property="og:type" content="website">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header class="header">
-        <h1 id="headtext">Dice Strategy Simulator</h1>
+        <link rel="stylesheet" href="style.css">
+        
+        <div class="header">
+            <h2 id="headtext">
+                dice stratigy simulator
+            </h2>
+        </div>
+        </head>
     </header>
 
-    <main>
-        <section id="controls">
-            <h3>Start Balance 
-                <input id="balance" type="number" value="100"> £
-            </h3>
+    <body>
+    <div id="controlls">
+            <h3>Start Balence <input id="balance" type="number"  value="100" placeholder="100"> £</h3>
+            <h3>bet amount <input id="stake" type="number"  value="1" placeholder="1"> £<button onclick="double()">X2</button><button onclick="half()">1/2</button></h3>
+            <h3>Land over <input max="100" min="1" onkeyup="updateover()" onchange="updateover()" id="over" type="number" value="50" placeholder="50"> %</h3>
+            <button onclick="bet()">Bet!</button>
+        </div>
 
-            <h3>Bet Amount 
-                <input id="stake" type="number" value="1"> £
-                <button onclick="double()">X2</button>
-                <button onclick="half()">1/2</button>
-            </h3>
-
-            <h3>Land Over 
-                <input id="over" type="number" min="1" max="100" value="50" onkeyup="updateover()" onchange="updateover()"> %
-            </h3>
-
-            <button onclick="bet()" id="betbutton">Bet!</button>
-        </section>
-
-        <section id="gamebox">
-            <div>
-                <meter id="slider" min="0" max="100" low="50" high="51" optimum="101"></meter>
-                <div id="marker"></div>
-            </div>
-        </section>
-
-        <section id="messages">
-            <h2>History:</h2>
-            <div id="msgbox"></div>
-        </section>
-    </main>
+    <div id="gamebox">
+        <div><meter id="slider" min="0" max="100" low="50" high="51" optimum="101"></meter><div id="marker"></div></div>
+    </div>
+    
+    <div id="messages"><h2 id="h2">History:</h2><div id="msgbox"></div></div>
 
     <script src="script.js"></script>
-
-</body>
+    </body>
 </html>
